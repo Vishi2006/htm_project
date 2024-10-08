@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+
+<body style="text-align: center;">
+    <form action="thank_you.html" method="post">
+        <fieldset>
+        <h1>PAYMENT FORM</h1>
+        <hr>
+        <p>REQUIRED FIELD ARE FOLLOWED BY *</p>
+        <h2>CONTACT INFORMATION</h2>
+        <hr>
+        <LABLE FOR="NMAE">NAME:*</LABLE>
+        <input type="text" ID="NAME" placeholder="Enter your name" required><br><br>
+        <fieldset>
+            <legend>GENDER*</legend>
+            <label for="MALE">MALE</label>
+            <input type="radio" name="GENDER" ID="MALE">
+            <label for="FEMALE">FEMALE</label>
+            <input type="radio" name="GENDER" ID="FEMALE">
+        </fieldset>
+        <HR>
+        <lable>ADDRESS:</label>
+        <textarea name="place" id="place" cols="40" rows="3" placeholder="Enter your address"></textarea>
+        <br><br>
+        <label for="EMAIL">EMAIL:*</label>
+        <input type="EMAIL" ID="EMAIL" placeholder="Enter your email" required>
+        <br><br>
+        <label for="PIN">PINCODE:*</label>
+        <input type="number" ID="PIN" placeholder="Enter your pincode" required>
+        <br>
+        <h2>PAYMENT INFORMATION</h2>
+        <label for="card">CARD TYPE:*</label>
+        <select name="card" id="card" required>
+                <option value="no-card">--Select a Card Type--</option>
+                <option value="card">Rupay</option>
+                <option value="card">Visa</option>
+                <option value="card">Master card</option>
+        </select>
+        <br><br>
+        <label for="card">CARD NUMBER:*</label>
+        <input type="number" ID="card" placeholder="Card Number" required>
+        <br><br>
+        <label for="date">EXPIRATION DATE:*</label>
+        <input type="date" ID="date" required>
+        <BR><br>
+        <label for="CVV">CVV:*</label>
+        <input type="number" ID="CVV" placeholder="CVV" required>
+        <BR><br>
+        <input type="submit" value="Pay Now" required>
+        <hr>
+    </form>
+</fieldset>
+</body>
+
+</html>
